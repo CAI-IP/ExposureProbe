@@ -1,0 +1,36 @@
+{
+	"FileVersion": 3,
+	"Version": 3,
+	"VersionName": "0.3.0",
+	"FriendlyName": "Exposure Probe",
+	"Description": "暴露探针：在关卡中放置 T/CT 探针，按眼位到身体采样点的射线计算双向可见身体比例与暴露不对称度 A；改动后只重算受影响的射线，报告变化的探针对与新增单向视线；附地面热力图、烟雾评估（CC/RT）与版本基线对比。 Place T/CT probes and measure, from eye to body sample points, the visible body share in each direction and the exposure asymmetry A. Edits recast only the affected rays. Includes a floor heatmap, smoke evaluation (CC/RT) and baseline comparison.",
+	"Category": "Level Design",
+	"CreatedBy": "CAI IPHONG",
+	"CreatedByURL": "https://github.com/CAI-IP/ExposureProbe",
+	"DocsURL": "https://github.com/CAI-IP/ExposureProbe#readme",
+	"SupportURL": "https://github.com/CAI-IP/ExposureProbe/issues",
+	"MarketplaceURL": "",
+	"EngineVersion": "5.8.0",
+	"CanContainContent": false,
+	"IsBetaVersion": true,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "ExposureProbe",
+			"Type": "UncookedOnly",
+			"LoadingPhase": "Default",
+			"PlatformAllowList": [
+				"Win64"
+			]
+		},
+		{
+			"Name": "ExposureProbeEditor",
+			"Type": "Editor",
+			"LoadingPhase": "PostEngineInit",
+			"PlatformAllowList": [
+				"Win64"
+			]
+		}
+	]
+}

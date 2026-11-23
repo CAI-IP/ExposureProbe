@@ -1,0 +1,41 @@
+{
+	"FileVersion": 3,
+	"Version": 3,
+	"VersionName": "0.3.0",
+	"FriendlyName": "Exposure Probe MCP Tools",
+	"Description": "可选：通过 Model Context Protocol 调用暴露探针的功能，需要引擎的实验性插件 Toolset Registry。 Optional: Exposure Probe tools for the Model Context Protocol server. Requires the experimental Toolset Registry plugin.",
+	"Category": "Level Design",
+	"EngineVersion": "5.8.0",
+	"CanContainContent": false,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": true,
+	"Installed": false,
+	"EnabledByDefault": false,
+	"Modules": [
+		{
+			"Name": "ExposureProbeMCP",
+			"Type": "Editor",
+			"LoadingPhase": "PostEngineInit",
+			"PlatformAllowList": [
+				"Win64"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "ExposureProbe",
+			"Enabled": true
+		},
+		{
+			"Name": "ToolsetRegistry",
+			"Enabled": true,
+			"TargetAllowList": [
+				"Editor"
+			]
+		}
+	],
+	"CreatedBy": "CAI IPHONG",
+	"CreatedByURL": "https://github.com/CAI-IP/ExposureProbe",
+	"DocsURL": "https://github.com/CAI-IP/ExposureProbe#readme",
+	"SupportURL": "https://github.com/CAI-IP/ExposureProbe/issues"
+}

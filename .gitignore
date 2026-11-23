@@ -1,0 +1,24 @@
+# Build output
+Binaries/
+Intermediate/
+DerivedDataCache/
+Saved/
+*.pdb
+*.obj
+*.lib
+*.exp
+*.dll
+*.modules
+
+# IDE
+.vs/
+.vscode/
+.idea/
+*.sln
+*.suo
+*.VC.db
+*.opensdf
+*.sdf
+
+# Release archives are attached to GitHub Releases
+*.zip
